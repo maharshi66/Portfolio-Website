@@ -1,23 +1,20 @@
 {
+  "homepage": "https://maharshi66.github.io/Portfolio-Website",
   "name": "simplefolio",
   "version": "1.0.1",
   "description": "A clean, beautiful and responsive portfolio template for Developers!",
   "main": "index.js",
   "scripts": {
     "start": "webpack-dev-server --config webpack.dev.js --open",
-    "build": "webpack --config webpack.prod.js"
+    "build": "webpack --config webpack.prod.js",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/cobidev/simplefolio"
-  },
+  "repository": {},
   "keywords": [],
-  "author": "Jacobo Martinez",
+  "author": "Maharshi Shah",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/cobidev/simplefolio/issues"
-  },
-  "homepage": "https://github.com/cobidev/simplefolio#readme",
+  "bugs": {},
   "devDependencies": {
     "clean-webpack-plugin": "^3.0.0",
     "css-loader": "^3.6.0",
@@ -36,6 +33,7 @@
   },
   "dependencies": {
     "bootstrap": "^4.5.0",
+    "gh-pages": "^3.1.0",
     "jquery": "^3.5.1",
     "popper.js": "^1.16.1",
     "tilt.js": "^1.2.1"
