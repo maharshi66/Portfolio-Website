@@ -4,10 +4,10 @@
     $primary-color 0%,
     $secondary-color 100%
   );
-  -webkit-clip-path: polygon(0 15vh, 100% 0, 100% 100%, 0 100%);
-  clip-path: polygon(0 15vh, 100% 0, 100% 100%, 0 100%);
+  -webkit-clip-path: polygon(9% 20vh, 97% 4%, 98% 90%, 0 97%);
+  clip-path: polygon(9% 20vh, 97% 4%, 98% 90%, 0 97%);
   padding: 15rem 0 10rem 0;
-  margin-top: -10rem;
+  /* margin-top: -10rem; */
   margin-bottom: -1px;
   color: $white-color;
 
@@ -36,5 +36,18 @@
         font-size: 2rem;
       }
     }
+  }
+
+.education-grid{
+  display: grid;
+  width: 80rem;
+  grid-template-columns: 1fr 1fr;
+  justify-content: center;  
+  }
+
+  .img-center{
+    grid-column: 1;
+    grid-row: 1 / -1;      /* from first line at start, to first line at end */
+    align-self: center;
   }
 }
