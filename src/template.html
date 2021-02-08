@@ -5,11 +5,30 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="shortcut icon" type="image/png" href="./assets/favicon.png" />
+    <!-- Bootstrap Linked for NavBar -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <style>
+      .sticky{
+        position: fixed;
+        top: 0;
+        width: 100%;
+        margin-right: auto;
+        z-index: 10;  
+      }
+      .bg-darkblue{
+         padding: 15px;
+         background-color: #0b1826;
+         font-weight: bold;  
+      }
 
+      #nav-toggle-button {
+          color: white;
+      }
+    </style>
     <!-- Put here your site title -->
     <title>Maharshi Shah | Software Engineer</title>
     <!-- Add some coding keywords below, Ex: (javascript, yourusername, etc) -->
-    <meta name="keywords" content="[maharshi66], [maharshi], javascript, c++, c, developer, software developer" />
+    <meta name="keywords" content="[maharshi66], [maharshi], javascript, c++, c, developer, software developer, React" />
     <!-- Improve your SEO by adding a small descrption of you -->
     <meta name="description" content="Freelance Software Engineer | Full-stack Web Developer | Mobile Application Developer" />
 
@@ -27,15 +46,16 @@
 
   <!-- Follow the HTML instructions to create your stunning portfolio website -->
   <body>
-    <div id="top"></div>
-
+    <div id="top">
+    </div>
     <!-- **** Hero Section **** -->
     <div id="hero" class="jumbotron">
       <div class="container">
         <h1 class="hero-title" class="load-hidden">
-          <span class="hero-title" class="load-hidden" style="font-family: 'Ananda Namaste', 'Montserrat'">Namaste</span><br /><br />My name is <span class="text-color-namaste">Maharshi Shah.</span>
+          <span class="hero-title" class="load-hidden" style="font-family: 'Ananda Namaste', 'Montserrat'">Namaste</span><br /><br /> 
+          <span class="hero-subtitle">My name is </span><span class="text-color-namaste">Maharshi Shah.</span>
           <br />
-          <h2 class="hero-subtitle" class="load-hidden">I build Web, Desktop, and Mobile Applications</h2>
+          <h2 class="hero-subtitle" class="load-hidden">I build Web, Desktop, and Mobile Apps</h2>
         </h1>
         <p class="hero-cta" class="load-hidden">
           <a class="cta-btn cta-btn--hero" href="#about">Know More</a>          
@@ -57,7 +77,27 @@
       </div>
     </div>
     <!-- /END Hero Section -->
-
+    <!-- Nav Bar Section -->
+    <div id="navbarsticky">
+    <nav class="navbar navbar-expand-md navbar-dark bg-darkblue">
+      <button id="nav-toggle-button" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+          <li class="nav-item active">
+            <a class="nav-link" href="#about"><span class="text-color-namaste">About</span> <!-- <span class="sr-only">(current)</span> --></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#projects"><span class="text-color-namaste">Projects</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#footer"><span class="text-color-namaste">Contact</span></a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    </div>
     <!-- **** About Section **** -->
     <section id="about">
       <div class="container">
@@ -241,7 +281,7 @@
     <!-- /END Contact Section -->
 
     <!-- **** Footer Section **** -->
-    <footer class="footer navbar-static-bottom">
+    <footer id="footer" class="footer navbar-static-bottom">
       <div class="container">
         <a  target="_blank"
             class="cta-btn cta-btn--resume"
@@ -273,5 +313,20 @@
       </div>
     </footer>
     <!-- /END Footer Section -->
+    <script>
+      window.onscroll = function() {myFunction()};
+      // Get the navbar
+      var navbar = document.getElementById("navbarsticky");
+      // Get the offset position of the navbar
+      var sticky = navbar.offsetTop;
+      // Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
+      function myFunction() {
+        if (window.pageYOffset > sticky + 100) {
+          navbar.classList.add("sticky")
+        } else {
+          navbar.classList.remove("sticky");
+        }
+      }
+    </script>
   </body>
 </html>
