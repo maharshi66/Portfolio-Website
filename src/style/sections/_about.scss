@@ -9,8 +9,9 @@
   color: $light-grey;
   height: 100%;
   border-top: 0px;
-  -webkit-clip-path: polygon(6% 2%, 95% 12%, 98% 90%, 3% 98%);
-  clip-path: polygon(6% 2%, 95% 12%, 98% 90%, 3% 98%);
+  clip-path: circle(70.0% at 50% 0);
+  -webkit-clip-path: circle(70.0% at 50% 0);
+
   padding-bottom: 10%;
 
   @include respond(tab-land) {
