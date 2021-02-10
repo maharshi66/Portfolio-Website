@@ -6,7 +6,7 @@ h1 {
 
 p,
 a {
-  font-family: Calibre, "San Francisco", "SF Pro Text", -apple-system, system-ui, sans-serif, 
+  font-family: "Calibre", "San Francisco", "SF Pro Text", -apple-system, system-ui, sans-serif, 
                'Montserrat', sans-serif;
   font-size: $default-font-size;
 }
@@ -56,15 +56,15 @@ a:hover {
 .text-color-namaste
 {
   background-image: linear-gradient(
-  to right,
-  #462523 0,
-  #cb9b51 22%, 
-  #f6e27a 45%,
-  #f6f2c0 50%,
-  #f6e27a 55%,
-  #cb9b51 78%,
-  #462523 100%
-  );
- color:transparent;
- -webkit-background-clip:text;
+    to right,
+    #462523 0,
+    #cb9b51 22%, 
+    #f6e27a 45%,
+    #f6f2c0 50%,
+    #f6e27a 55%,
+    #cb9b51 78%,
+    #462523 100%
+    );
+   color:transparent;
+   -webkit-background-clip:text;
 }
