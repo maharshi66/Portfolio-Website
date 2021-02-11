@@ -91,7 +91,7 @@
     /* Hamburger menu */
     .hamburger {
         background-color: grey;
-        border-radius: 50%;
+       border-radius: 50%;
         position: fixed;
         top: 20px;
         right: 20px;
@@ -449,7 +449,21 @@
     <script>
       const hamburger = document.querySelector('.hamburger');
       const menu = document.querySelector('.menu');
-      
+      function disableScroll() { 
+            // Get the current page scroll position 
+           scrollTop = window.pageYOffset || document.documentElement.scrollTop; 
+           scrollLeft = window.pageXOffset || document.documentElement.scrollLeft, 
+              
+            // if any scroll is attempted, set this to the previous value 
+            window.onscroll = function() { 
+                window.scrollTo(scrollLeft, scrollTop); 
+            }; 
+      } 
+          
+        function enableScroll() { 
+            window.onscroll = function() {}; 
+        } 
+
       hamburger.addEventListener('click', () => {
           toggleClasses();
       });
@@ -459,10 +473,18 @@
           toggleClasses();
         })
       })
+
       function toggleClasses() {
           hamburger.classList.toggle('open');
           menu.classList.toggle('open');
+
+          if(hamburger.classList.contains('open')){
+            disableScroll();
+          }else{
+            enableScroll();
+          }
       }
+
     </script>
     <script src="https://cdn.jsdelivr.net/npm/animejs@3.0.1/lib/anime.min.js"></script>
     <script>
