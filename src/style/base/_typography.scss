@@ -1,12 +1,11 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,700');
-
-h1 {
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap');h1 {
   font-weight: 700;
 }
 
 p,
 a {
-  font-family: "Calibre", "San Francisco", "SF Pro Text", -apple-system, system-ui, sans-serif, 
+  font-family: "Titillium Web", "San Francisco", "SF Pro Text", -apple-system, system-ui, sans-serif, 
                'Montserrat', sans-serif;
   font-size: $default-font-size;
 }

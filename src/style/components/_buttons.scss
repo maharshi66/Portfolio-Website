@@ -24,40 +24,37 @@
 /* Hero Style */
 .cta-btn--hero {
   @include supportColorForIE11();
-  border: 2px solid transparent;
+  border: 3px solid transparent;
   border-image: linear-gradient(
-    135deg,
-    $primary-color 0%,
-    $secondary-color 100%
+    to right,
+    #462523 0,
+    #cb9b51 22%, 
+    #f6e27a 45%,
+    #f6f2c0 50%,
+    #f6e27a 55%,
+    #cb9b51 78%,
+    #462523 100%
   );
+
   border-image-slice: 1;
+
   @include supportIE11() {
     color:$secondary-color !important;
     &:hover {
       color:$white-color !important;
     }
   }
-  // Responsive Button hero style
-  @include respond(phone) {
-    background-image: none;
-    border: 2px solid $secondary-color;
-    -webkit-text-fill-color: $secondary-color;
-  }
 
   &::after {
     background-image: linear-gradient(
       135deg,
       $primary-color 0%,
-      $secondary-color 100%
+      $secondary-color 60%
     );
-    // Responsive Button hero style
-    @include respond(phone) {
-      background-image: none;
-    }
   }
 
   &:hover {
-    -webkit-text-fill-color: $light-grey;
+    -webkit-text-fill-color: black;
     text-decoration: none;
     // Responsive Button hover hero style
     @include respond(phone) {
@@ -72,16 +69,43 @@
 
 /* Resume Style */
 .cta-btn--resume {
-  color: $white-color;
-  border: 2px solid $white-color;
-  
+  @include supportColorForIE11();
+  border: 3px solid transparent;
+  border-image: linear-gradient(
+    to right,
+    #462523 0,
+    #cb9b51 22%, 
+    #f6e27a 45%,
+    #f6f2c0 50%,
+    #f6e27a 55%,
+    #cb9b51 78%,
+    #462523 100%
+  );
+
+  border-image-slice: 1;
+
+  @include supportIE11() {
+    color:$secondary-color !important;
+    &:hover {
+      color:$white-color !important;
+    }
+  }
+
   &::after {
-    background: $white-color;
+    background-image: linear-gradient(
+      135deg,
+      $primary-color 0%,
+      $secondary-color 60%
+    );
   }
 
   &:hover {
-    color: $secondary-color;
+    -webkit-text-fill-color: black;
     text-decoration: none;
+    // Responsive Button hover hero style
+    @include respond(phone) {
+      -webkit-text-fill-color: $secondary-color;
+    }
 
     &::after {
       width: 100%;
