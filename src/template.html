@@ -14,6 +14,13 @@
     <!-- Improve your SEO by adding a small descrption of you -->
     <meta name="description" content="Freelance Software Engineer, Full-stack Web Developer, Mobile Application Developer" /> 
     <style type="text/css">
+      .about-link{
+           color:#FFD700;
+           font-weight: 3px; 
+      }
+      .about-link:hover {
+        color: green;
+      }
       .menu ul {
         display: flex;
         justify-content: center;
@@ -145,8 +152,8 @@
       position: relative;
       justify-content: center;
       margin: auto;
-      width: 85%;
-      height: 80%;
+      width: 60%;
+      height: 60%;
     }
     
     .anim path {
@@ -252,16 +259,14 @@
           <div class="col-md-6 col-sm-12">
             <div class="about-wrapper__info">
               <p class="about-wrapper__info-text">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                Excepturi neque, ipsa animi maiores repellendu distinctioaperiam
-                earum dolor voluptatum consequatur blanditiis inventore debitis
-                fuga numquam voluptate architecto itaque molestiae.
+                Namaste, I'm Maharshi, a software engineer based in Mumbai, India.
+                
+                I love building comprehensive state-of-the-art applications for the web, desktop and mobile devices.     
               </p>
               <p class="about-wrapper__info-text">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                Excepturi neque, ipsa animi maiores repellendu distinctioaperiam
-                earum dolor voluptatum consequatur blanditiis inventore debitis
-                fuga numquam voluptate architecto itaque molestiae.
+                After graduating with a BS in Computer Engineering from the <a class="about-link" href="https://www.usf.edu/">University of South Florida</a>, I joined <a class="about-link" href="https://www.electropneumatics.com/">Electropneumatics & Hydraulics</a> as a software engineer
+                where I worked on building high-performance software for the Defense industry.
+                I have been striving to learn new technologies to build things for the web and mobile devices and here a few that I have been working with: 
               </p>
               <span class="d-flex mt-3">
                 <a target="_blank" class="cta-btn cta-btn--resume" href="#!">
@@ -440,7 +445,7 @@
         <hr />
         <!-- If you give me some credit, will be huge for me :) -->
         <p class="footer__text">
-          © 2021 - Design and Developed by <a href="https://github.com/maharshi66" target="_blank">Maharshi Shah</a>
+          © 2021 - Designed and developed by Maharshi Shah
           </a>
         </p>
       </div>
@@ -494,24 +499,23 @@
         });
       });
     </script>
-
     <script type="text/javascript">
-      var pathEls = document.querySelectorAll('path');
-      for (var i = 0; i < pathEls.length; i++) {
-        var pathEl = pathEls[i];
-        var offset = anime.setDashoffset(pathEl);
-        pathEl.setAttribute('stroke-dashoffset', offset);
-        anime({
-          targets: pathEl,
-          strokeDashoffset: [offset, 0],
-          duration: 1200,
-          delay: 100,
-          loop: true,
-          direction: 'alternate',
-          easing: 'easeInOutSine',
-          autoplay: true
-        });
-      }
+        var pathEls = window.document.querySelectorAll('path');
+        for (var i = 0; i < pathEls.length; i++) {
+          var pathEl = pathEls[i];
+          var offset = anime.setDashoffset(pathEl);
+          pathEl.setAttribute('stroke-dashoffset', offset);
+          anime({
+            targets: pathEl,
+            strokeDashoffset: [offset, 0],
+            duration: 1200,
+            delay: 100,
+            loop: true,
+            direction: 'alternate',
+            easing: 'easeInOutSine',
+            autoplay: true
+          });
+        }
     </script>
   </body>
 </html>
