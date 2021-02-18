@@ -3,9 +3,9 @@
     color: $light-grey;
     height: 100%;
     border-top: 0px;
-    clip-path: circle(75.0% at 50% 20%);
+/*     clip-path: circle(75.0% at 50% 20%);
     -webkit-clip-path: circle(75.0% at 50% 20%);
-    padding-bottom: 10%;
+    padding-bottom: 10%; */
 
   @include respond(tab-land) {
     height: 100%;
@@ -48,7 +48,7 @@
           text-align: left;
         }
         @include respond(tab-port-sm) {
-          text-align: center;
+          text-align: left;
         }
 
         &--important {

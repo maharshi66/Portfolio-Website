@@ -159,6 +159,17 @@
     .anim path {
       stroke-width: 15;
     }  
+
+    .techUsedList{
+      display: inline;
+      list-style-type: none;
+      padding: 0.2rem;  
+    }
+
+    .techUsedListImg{
+      width: 7rem;
+      height: 5rem;
+    }
     </style>
     <!-- Required librarys -->
     <link
@@ -210,11 +221,11 @@
     <div id="hero" class="jumbotron">
       <div class="container">
         <h1 class="hero-title" class="load-hidden">
-          <span class="hero-subtitle">Hi, my name is </span><span class="text-color-namaste">
+          <span class="hero-subtitle">Hi,<br>my name is </span><span class="text-color-namaste">
           Maharshi Shah
           </span>          
           <br>
-          <h2 class="hero-subtitle" class="load-hidden">I build Web, Desktop, and Mobile Apps</h2>
+          <h2 class="hero-subtitle" class="load-hidden">I build apps for the web, desktop, and mobile devices</h2>
         </h1>
         <p class="hero-cta" class="load-hidden">
           <a class="cta-btn cta-btn--hero" href="#about">Know More</a>          
@@ -260,11 +271,10 @@
             <div class="about-wrapper__info">
               <p class="about-wrapper__info-text">
                 Namaste, I'm Maharshi, a software engineer based in Mumbai, India.
-                
-                I love building comprehensive state-of-the-art applications for the web, desktop and mobile devices.     
+                <br>I love designing and building state-of-the-art applications for the web, desktop and mobile devices.     
               </p>
               <p class="about-wrapper__info-text">
-                After graduating with a BS in Computer Engineering from the <a class="about-link" href="https://www.usf.edu/">University of South Florida</a>, I joined <a class="about-link" href="https://www.electropneumatics.com/">Electropneumatics & Hydraulics</a> as a software engineer
+                After graduating with a BS in <span class="about-link">Computer Engineering</span> from the <a class="about-link" href="https://www.usf.edu/">University of South Florida</a>, I joined <a class="about-link" href="https://www.electropneumatics.com/">Electropneumatics & Hydraulics</a> as a software engineer
                 where I worked on building high-performance software for the Defense industry.
                 I have been striving to learn new technologies to build things for the web and mobile devices and here a few that I have been working with: 
               </p>
@@ -287,6 +297,40 @@
           <h2 class="section-title dark-blue-text">
             Projects
           </h2>
+          
+          <div class="row">
+            <div class="col-lg-4 col-sm-12">
+              <div class="project-wrapper__text">
+                <h3 class="project-wrapper__text-title">Mounted Gun System</h3>
+                <div>
+                  <p class="mb-4">
+                    MGS4x4.
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Excepturi neque, ipsa animi maiores repellendus distinctio
+                    aperiam earum dolor voluptatum consequatur blanditiis
+                    inventore debitis fuga numquam voluptate ex architecto
+                    itaque molestiae.
+                  </p>
+                </div>
+                <a target="_blank" class="cta-btn cta-btn--hero" href="#!">
+                  See Live
+                </a>
+                <a target="_blank" class="cta-btn text-color-main" href="#!">
+                  Source Code
+                </a>
+              </div>
+            </div>
+            <div class="col-lg-8 col-sm-12">
+              <div class="project-wrapper__image">
+                <a href="#!" target="_blank">
+                  <div data-tilt class="thumbnail rounded">
+                    <img class="img-fluid" src="./assets/project.jpg" />
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- /END Project -->
 
           <!-- Each .row is a project -->
           <div class="row">
@@ -317,44 +361,27 @@
                     <img class="img-fluid" src="./assets/PseudoGen.png" />
                   </div>
                 </a>
+                <ul class="project-wrapper__text techUsedList">
+                  <li class="techUsedList">
+                    <img class="techUsedListImg" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/android/android-original-wordmark.svg" /></a>
+                  </li> 
+                  <li class="techUsedList">
+                    <img class="techUsedListImg" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/java/java-original.svg" /> </a>
+                  </li>
+                  <li class="techUsedList">
+                    <img class="techUsedListImg" src="https://firebase.google.com/downloads/brand-guidelines/SVG/logo-built_black.svg" />
+                  </li>
+                  <li class="techUsedList">
+                    <img class="techUsedListImg" src="https://seekvectorlogo.com/wp-content/uploads/2019/07/sqlite-vector-logo.png" />
+                  </li>  
+                </ul>
               </div>
             </div>
           </div>
           <!-- /END Project -->
 
           <!-- Each .row is a project -->
-          <div class="row">
-            <div class="col-lg-4 col-sm-12">
-              <div class="project-wrapper__text">
-                <h3 class="project-wrapper__text-title">Project Title</h3>
-                <div>
-                  <p class="mb-4">
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                    Excepturi neque, ipsa animi maiores repellendus distinctio
-                    aperiam earum dolor voluptatum consequatur blanditiis
-                    inventore debitis fuga numquam voluptate ex architecto
-                    itaque molestiae.
-                  </p>
-                </div>
-                <a target="_blank" class="cta-btn cta-btn--hero" href="#!">
-                  See Live
-                </a>
-                <a target="_blank" class="cta-btn text-color-main" href="#!">
-                  Source Code
-                </a>
-              </div>
-            </div>
-            <div class="col-lg-8 col-sm-12">
-              <div class="project-wrapper__image">
-                <a href="#!" target="_blank">
-                  <div data-tilt class="thumbnail rounded">
-                    <img class="img-fluid" src="./assets/project.jpg" />
-                  </div>
-                </a>
-              </div>
-            </div>
-          </div>
-          <!-- /END Project -->
+
 
           <!-- Each .row is a project -->
           <div class="row">

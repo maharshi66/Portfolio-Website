@@ -16,6 +16,16 @@
       margin-bottom: 0rem;
     }
 
+    &__techusedimg {
+      width: 10rem;
+      height: 8rem;
+
+      @include respond(phone) {
+        width: 40%;
+        height: 30%;
+      }
+    }
+
     .row {
       margin-bottom: 8rem;
 
